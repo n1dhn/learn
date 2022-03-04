@@ -34,7 +34,7 @@ params:
   geekdocTOC: 3
   geekdocNextPrev: true
   geekdocMenuBundle: true
-  geekdocLogo: "images/birdwatch-icon.png"
+  geekdocLogo: "images/icon.png"
   geekdocBreadcrumb: false
   geekdocSearch: false
   geekdocRepo: "https://github.com/rubixchain/learn"

@@ -1,17 +1,21 @@
 ---
 main:
-  - name: About
+  - name: Setup Wallet
     ref: ""
     sub:
       - name: FAQs
         ref: "faq"
-  - name: Contributing
+  - name: How to Mine
     ref: ""
     sub:
-      - name: Signing Up
+      - name: Earning Proof Credits
         ref: "signing-up"
   - name: Under the Hood
     ref: ""
     sub:
-      - name: Download data
+      - name: Proof of Pledge
+        ref: "download-data"
+      - name: Subnet
+        ref: "download-data"
+      - name: Node Visibility
         ref: "download-data"

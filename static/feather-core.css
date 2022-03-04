@@ -8,7 +8,7 @@ Edit `src/js/core.js` instead.
 
 :root {
   /* Colors */
-  --tw-color-blue-primary: #1da1f2;
+  --tw-color-blue-primary: #04879d;
   --tw-color-text-primary: #14171a;
   --tw-color-text-secondary: #536471;
   --tw-color-text-link: #1b95e0;
@@ -34,7 +34,7 @@ Edit `src/js/core.js` instead.
   --tw-color-green-light: #68e090;
   --tw-color-green-faded: #a5f2aa;
   --tw-color-blue-deep: #005fd1;
-  --tw-color-blue-medium: #1da1f2;
+  --tw-color-blue-medium: #04879d;
   --tw-color-blue-light: #71c9f8;
   --tw-color-blue-faded: #97e3ff;
   --tw-color-blue-faint: #eaf5fd;
@@ -808,7 +808,7 @@ h2 .Icon.Icon--featherTooltipCue {
 }
 .Icon.Icon--featherTooltipCue:hover,
 .Icon.Icon--featherTooltipCue:focus {
-  background-color: #1da1f2;
+  background-color: #04879d;
   cursor: pointer;
 }
 .Icon.Icon--loadingSmall {
@@ -1468,7 +1468,7 @@ h2 .Icon.Icon--featherTooltipCue {
 .Icon--magicrecs,
 .Icon--colorLightning,
 .Icon--colorFollower {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--lifelineBadge {
   color: #d82e18;
@@ -1496,10 +1496,10 @@ h2 .Icon.Icon--featherTooltipCue {
   color: #aab8c2;
 }
 .Icon--top {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--translator {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--moderator {
   color: #ffad1f;
@@ -1508,14 +1508,14 @@ h2 .Icon.Icon--featherTooltipCue {
   color: #ccd6dd;
 }
 .Icon--verified {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--verified:before {
   color: white;
 }
 .Icon--circleActiveMe,
 .Icon--circleActiveBird {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--colorHeart,
 .Icon--circleActiveHeart,
@@ -1529,7 +1529,7 @@ h2 .Icon.Icon--featherTooltipCue {
   color: #657786;
 }
 .Icon--playButton {
-  color: #1da1f2;
+  color: #04879d;
 }
 .Icon--playButton:after {
   color: white;
@@ -1726,7 +1726,7 @@ h6 {
 .Checkbox--indeterminate
   .Checkbox-input.is-keyboardFocus
   + .Checkbox-uiWrapper {
-  box-shadow: 0 0 0 1px #1da1f2 inset;
+  box-shadow: 0 0 0 1px #04879d inset;
   transition: box-shadow 0.15s ease-in-out;
   background-color: rgba(29, 161, 242, 0.15);
 }
@@ -1757,8 +1757,8 @@ h6 {
 /* States > Checked, indeterminate */
 .Checkbox--indeterminate .Checkbox-uiWrapper .Checkbox-ui,
 .Checkbox-input:checked + .Checkbox-uiWrapper .Checkbox-ui {
-  background-color: #1da1f2;
-  border-color: #1da1f2;
+  background-color: #04879d;
+  border-color: #04879d;
 }
 .Checkbox--indeterminate .Checkbox-uiWrapper .Checkbox-ui::after {
   content: "–";
@@ -1786,7 +1786,7 @@ h6 {
 /* @generated */
 .IconButton {
   transition: box-shadow 0.15s ease-in-out;
-  color: #1da1f2;
+  color: #04879d;
   width: 2rem;
   height: 2rem;
   font-size: 1.1rem;
@@ -1817,10 +1817,10 @@ h6 {
   background: rgba(29, 161, 242, 0.25);
 }
 .IconButton:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #04879d;
 }
 .u-featherBackgroundDark .IconButton:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px black, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px black, 0 0 0 4px #04879d;
 }
 .IconButton[disabled] {
   cursor: default;
@@ -1853,10 +1853,10 @@ h3 .IconButton {
   background: rgba(224, 36, 94, 0.25);
 }
 .IconButton--danger:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #04879d;
 }
 .u-featherBackgroundDark .IconButton--danger:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px black, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px black, 0 0 0 4px #04879d;
 }
 .IconButton--tertiary {
   color: #657786;
@@ -1874,11 +1874,11 @@ h3 .IconButton {
   background: rgba(170, 184, 194, 0.25);
 }
 .IconButton--tertiary:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #04879d;
 }
 .u-featherBackgroundDark
   .IconButton--tertiary:active:focus:not(.is-mouseFocus) {
-  box-shadow: 0 0 0 2px black, 0 0 0 4px #1da1f2;
+  box-shadow: 0 0 0 2px black, 0 0 0 4px #04879d;
 }
 /* States */
 /* Sizes */
