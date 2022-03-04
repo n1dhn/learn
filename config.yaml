@@ -1,6 +1,6 @@
-baseURL: http://n1dhn.github.io/learn-site/
+baseURL: http://n1dhn.github.io/learn/
 languageCode: en-us
-title: Birdwatch Guide
+title: Learn Rubix
 
 theme: "geekdoc"
 
@@ -37,5 +37,5 @@ params:
   geekdocLogo: "images/birdwatch-icon.png"
   geekdocBreadcrumb: false
   geekdocSearch: false
-  # geekdocRepo: "https://github.com/twitter/birdwatch"
-  # geekdocEditPath: "edit/main/content"
+  geekdocRepo: "https://github.com/rubixchain/learn"
+  geekdocEditPath: "edit/main/content"
