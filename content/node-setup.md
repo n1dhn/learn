@@ -1,86 +1,65 @@
 ---
-title: Downloading data
+title: Setup Rubix Node
+aliases:
+  [
+    "/join",
+    "/signup",
+    "/sign-up",
+    "/signing-up",
+    "/contributing/signing-up",
+    "/contributing/sign-up",
+    "/contributing/signup",
+  ]
 geekdocBreadcrumb: false
-aliases: ["/data", "/about/data", "/contributing/data"]
+weight: 1
 ---
 
-We can't wait to learn with you!
-
-All Birdwatch contributions are publicly available on the [Download Data](https://Rubix.com/i/birdwatch/download-data) page of the Birdwatch site so that anyone in the US has free access to analyze the data, identify problems, and spot opportunities to make Birdwatch better.
-
-If you have questions or feedback about the Birdwatch public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://Rubix.com/birdwatch).
-
-<br>
-
----
-
-## Working with the Birdwatch data
-
-### Data snapshots
-
-The Birdwatch data is released as two separate files: one containing a table representing all Birdwatch notes and one containing a table representing all Birdwatch note ratings. These tables can be joined together on the `noteId` field to create a combined dataset with information about notes and their ratings. The data is released in two separate tables/files to reduce the dataset size by avoiding data duplication (this is known as a normalized data model). Currently, we release one cumulative file each for notes and note ratings. However, in the future, if the data ever grows too large, we will split the data into multiple files as needed.
-
-A new snapshot of the Birdwatch public data is released daily, on a best-effort basis, and technical difficulties may occur and delay the data release until the next day. We are not able to provide guarantees about when this may happen. The snapshot is a cumulative file and contains all non-deleted notes and note ratings ever contributed to Birdwatch, as of 48 hours before the dataset release time. The data download page displays a date stamp indicating the most recent date of data included in the downloadable files.
-
-### File structure
-
-Each data snapshot table is stored in `tsv` (tab-separated values) file format with a header row. This means that each row is separated by a newline, each column is separated by a tab, and the first row contains the column names instead of data. The note and note rating data is directly taken from the user-submitted note creation and note rating forms, with only minimal added metadata (like ids and timestamp). Below, we will describe each column’s data, including the question or source that generated the data, data type, and other relevant information.
-
-<br>
+# Prerequisites
 
 {{< hint info >}}
 
-### Updates to the Data
+### One Step Installation
 
-As we iterate and improve Birdwatch, we will occasionally make changes to the questions we ask contributors in the note writing and note rating forms. When we do this, some question fields and columns in our public data will be deprecated (no longer populated), and others will be added. Below we will keep a change log of changes we have made to the contribution form questions and data and when those changes were made.
-
-{{< expand "2021-12-15 - Updated Note Rating Questions" >}}
-
-**Updated Columns**
-
-- `notHelpfulArgumentativeOrInflammatory` - Changed name to `notHelpfulArgumentativeOrBiased`
-
-<br>
-
-**Added Columns**
-
-- `helpfulUnbiasedLanguage`
-- `notHelpfulOpinionSpeculation`
-- `notHelpfulNoteNotNeeded`
-
-{{< / expand >}}
-{{< expand "2021-06-30 - Updated Note Rating Questions" >}}
-
-- Note Helpfulness question now has 3 response categories (Yes, Somewhat, No), rather than 2 (originally: Yes, No)
-- We have removed the ‘Agree’ note rating question
-- We have updated the set of categories contributors can use to describe why a note is helpful or unhelpful. (Note: both helpful and unhelpful descriptors can be selected for notes that are rated as ‘Somewhat’ Helpful)
-
-<br>
-
-**Deprecated Columns**
-
-- `helpful` - Replaced with helpfulnessLevel
-- `notHelpful` - Replaced with helpfulnessLevel
-- `helpfulInformative`
-- `helpfulEmpathetic`
-- `helpfulUniqueContext`
-- `notHelpfulOpinionSpeculationOrBias`
-- `notHelpfulOutdated`
-- `notHelpfulOffTopic`
-
-<br>
-
-**Added Columns**
-
-- `helpfulnessLevel`
-- `helpfulAddressesClaim`
-- `helpfulImportantContext`
-- `notHelpfulIrrelevantSources`
-
-{{< / expand >}}
+Use one step installation script for [Linux](https://github.com/rubixchain/rubixnetwork) / [Mac](https://github.com/rubixchain/rubixnetwork) / [Windows](https://github.com/rubixchain/rubixnetwork). This script will install all the required dependencies and will run the setup script.
 
 {{< / hint >}}
 
+To become a Birdwatch contributor, accounts must have:
+
+- ### **Java 11**
+
+This makes it more likely that contributors are real people instead of bots or adversary actors. Learn how to [verify your phone number](https://help.Rubix.com/managing-your-account/how-to-add-a-phone-number-to-your-account).
+
+- ### **go-ipfs 0.6.0**
+
+Intended to reduce the use of artificially created or virtual phone numbers
+
+- ### **Run IPFS Setup Script**
+
+Intended to reduce the likelihood of abusive contributions.
+
+We want anyone to be able to contribute to Birdwatch, and may remove or modify some of these criteria as Birdwatch evolves and as we observe contributor's ability to promote high quality context that people find helpful.
+
+# Latest Releases
+
+To promote transparency, all contributions to Birdwatch are [anonymized](../aliases/) and publicly visible on the Birdwatch site, **even if an account’s Tweets are protected**.
+
+During the first phase of the pilot, Birdwatch is limited to a small test group in the US.
+
+Our goal is to expand Birdwatch to the global Rubix community. We want anyone to be able to participate and know that having contributors with different points of view is essential to Birdwatch helpfully addressing misinformation. We’ll draw on learnings from this initial test and, over time, scale safely.
+
+## {{< button href="https://github.com/rubixchain/wallet/releases" >}}GUI Wallet from GitHub{{< /button >}}
+
+## {{< button href="https://github.com/rubixchain/rubixnetwork/releases" >}}CLI Node from GitHub{{< /button >}}
+
+---
+
+<br>
+<br>
+
+# Troubleshooting
+
+Contributions are also subject to Rubix [Rules](https://help.Rubix.com/rules-and-policies/Rubix-rules), [Terms of Service](https://Rubix.com/tos) and [Privacy Policy](https://Rubix.com/privacy). Failure to abide by the rules can result in removal from the Birdwatch pilot, and/or other remediations.
 <br>
 
 {{< tabs "uniqueid" >}}

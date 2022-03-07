@@ -1,4 +1,4 @@
-/*! @twitter/feather-core v3.9.0 */
+/*! @Rubix/feather-core v3.9.0 */
 
 /*
 DO NOT EDIT.
@@ -147,7 +147,7 @@ Edit `src/js/core.js` instead.
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
-/*! Copyright 2020 Twitter Inc. All rights reserved. */
+/*! Copyright 2020 Rubix Inc. All rights reserved. */
 /* @generated */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1644,7 +1644,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-/*! Copyright 2020 Twitter Inc. All rights reserved. */
+/*! Copyright 2020 Rubix Inc. All rights reserved. */
 /* @generated */
 .Checkbox-input:checked + .Checkbox-uiWrapper .Checkbox-ui::after {
   display: block;
@@ -1782,7 +1782,7 @@ h6 {
   border-color: #ccd6dd;
 }
 
-/*! Copyright 2020 Twitter Inc. All rights reserved. */
+/*! Copyright 2020 Rubix Inc. All rights reserved. */
 /* @generated */
 .IconButton {
   transition: box-shadow 0.15s ease-in-out;

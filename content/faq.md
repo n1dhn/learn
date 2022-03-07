@@ -40,7 +40,7 @@ Returns: Transaction ID (String), Success / Failure (Boolean), DID (String)
 
 {{< /expand >}}
 
-{{< expand "What are Levels and Credits?" >}}
+{{< expand "What are Levels and Credits? How to earn required Credits to mine an RBT?" >}}
 
 Each of the 15 successful validators (5 out of 7 ⍺ validators following PBFT consensus, 5 out of the 7 β, 5 out of the ) in any transaction receive one proof credit (p). For a transaction involving an asset token, ⍺ validators get an additional proof credit each (more on this in the asset transfer section later in this paper).Validators will accumulate proof credits from various transactions across different Proofchains. When a node’s (p) reaches the threshold level , the node can convert the proof credits into one new RBT token. Nodes continue to earn proof credits & thereby harvest new RBT tokens by participating in consensus of various transactions & perpetually storing the consensus proofs. When a node transfers its outstanding proof credits or the harvested RBT tokens along with the supporting proof credits to a new node, the receiving node will continue to store the transaction proofs (otherwise the corresponding RBT token will be invalid).
 
@@ -48,4 +48,12 @@ Each validator node keeps the latest count of outstanding proof credits as well 
 
 {{< /expand >}}
 
-Have more questions? Feel free to Tweet or message our team [@rubixchain](https://twitter.com/birdwatch)
+{{< expand "Do I need to backup my node after every transaction or periodically?" >}}
+
+Rubix is designed differently from other chains, its more decentralized.  Other chains, everyone data is stored everywhere, causing privacy issues/slow adoption.  We designed it such that everyone is responsible for their data, but provenance is on the chain & immutable.
+
+If a transaction happens after last backup & system crashes, you can restore to latest state by syncing proofchain to any node that did txns after your node txn.  Because every subsequent node will store the latest chain.  So you can always sync to the latest state.  That's not an issue if you are using a backup.
+
+{{< /expand >}}
+
+Have more questions? Feel free to Tweet or message our team [@rubixchain](https://twitter.com/rubixchain)

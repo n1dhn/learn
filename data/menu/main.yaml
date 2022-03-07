@@ -1,6 +1,6 @@
 ---
 main:
-  - name: Setup Wallet
+  - name: Setup Rubix Node
     ref: ""
     sub:
       - name: FAQs
@@ -8,14 +8,14 @@ main:
   - name: How to Mine
     ref: ""
     sub:
-      - name: Earning Proof Credits
-        ref: "signing-up"
-  - name: Under the Hood
-    ref: ""
-    sub:
-      - name: Proof of Pledge
-        ref: "download-data"
-      - name: Subnet
-        ref: "download-data"
-      - name: Node Visibility
-        ref: "download-data"
+      - name: Setup Rubix Node
+        ref: "node-setup"
+      - name: Create Decentralized IDentity
+        ref: "create-did"
+      - name: Earn Proof Credits
+        ref: "proof-credits"
+  # - name: Under the Hood
+  #   ref: ""
+  #   sub:
+  #     - name: Proof of Pledge
+  #       ref: "download-data"
