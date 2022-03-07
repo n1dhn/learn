@@ -6,21 +6,21 @@ aliases: ["/data", "/about/data", "/contributing/data"]
 
 We can't wait to learn with you!
 
-All Birdwatch contributions are publicly available on the [Download Data](https://Rubix.com/i/birdwatch/download-data) page of the Birdwatch site so that anyone in the US has free access to analyze the data, identify problems, and spot opportunities to make Birdwatch better.
+All rubix contributions are publicly available on the [Download Data](https://Rubix.com/i/rubix/download-data) page of the rubix site so that anyone in the US has free access to analyze the data, identify problems, and spot opportunities to make rubix better.
 
-If you have questions or feedback about the Birdwatch public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://rubix.net).
+If you have questions or feedback about the rubix public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://rubix.net).
 
 <br>
 
 ---
 
-## Working with the Birdwatch data
+## Working with the rubix data
 
 ### Data snapshots
 
-The Birdwatch data is released as two separate files: one containing a table representing all Birdwatch notes and one containing a table representing all Birdwatch note ratings. These tables can be joined together on the `noteId` field to create a combined dataset with information about notes and their ratings. The data is released in two separate tables/files to reduce the dataset size by avoiding data duplication (this is known as a normalized data model). Currently, we release one cumulative file each for notes and note ratings. However, in the future, if the data ever grows too large, we will split the data into multiple files as needed.
+The rubix data is released as two separate files: one containing a table representing all rubix notes and one containing a table representing all rubix note ratings. These tables can be joined together on the `noteId` field to create a combined dataset with information about notes and their ratings. The data is released in two separate tables/files to reduce the dataset size by avoiding data duplication (this is known as a normalized data model). Currently, we release one cumulative file each for notes and note ratings. However, in the future, if the data ever grows too large, we will split the data into multiple files as needed.
 
-A new snapshot of the Birdwatch public data is released daily, on a best-effort basis, and technical difficulties may occur and delay the data release until the next day. We are not able to provide guarantees about when this may happen. The snapshot is a cumulative file and contains all non-deleted notes and note ratings ever contributed to Birdwatch, as of 48 hours before the dataset release time. The data download page displays a date stamp indicating the most recent date of data included in the downloadable files.
+A new snapshot of the rubix public data is released daily, on a best-effort basis, and technical difficulties may occur and delay the data release until the next day. We are not able to provide guarantees about when this may happen. The snapshot is a cumulative file and contains all non-deleted notes and note ratings ever contributed to rubix, as of 48 hours before the dataset release time. The data download page displays a date stamp indicating the most recent date of data included in the downloadable files.
 
 ### File structure
 
@@ -32,7 +32,7 @@ Each data snapshot table is stored in `tsv` (tab-separated values) file format w
 
 ### Updates to the Data
 
-As we iterate and improve Birdwatch, we will occasionally make changes to the questions we ask contributors in the note writing and note rating forms. When we do this, some question fields and columns in our public data will be deprecated (no longer populated), and others will be added. Below we will keep a change log of changes we have made to the contribution form questions and data and when those changes were made.
+As we iterate and improve rubix, we will occasionally make changes to the questions we ask contributors in the note writing and note rating forms. When we do this, some question fields and columns in our public data will be deprecated (no longer populated), and others will be added. Below we will keep a change log of changes we have made to the contribution form questions and data and when those changes were made.
 
 {{< expand "2021-12-15 - Updated Note Rating Questions" >}}
 
@@ -88,7 +88,7 @@ As we iterate and improve Birdwatch, we will occasionally make changes to the qu
 | Field | Type | Descripton | Response values |
 | ---------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | `noteId` | Long | The unique ID of this note | |
-| `participantId` | String | A Birdwatch-specific user identifier of the user who authored the note. This is a permanent id, which remains stable even if the user changes their username/handle. | |
+| `participantId` | String | A rubix-specific user identifier of the user who authored the note. This is a permanent id, which remains stable even if the user changes their username/handle. | |
 | `createdAtMillis` | Long | Time the note was created, in milliseconds since epoch. | |
 | `tweetId` | Long | The tweetId number for the tweet that the note is about. | |
 | `classification` | String | User-entered multiple choice response to note writing question: “Given current evidence, I believe this tweet is:” | "NOT_MISLEADING" "MISINFORMED_OR_POTENTIALLY_MISLEADING" |
@@ -116,7 +116,7 @@ As we iterate and improve Birdwatch, we will occasionally make changes to the qu
 | Field                                    | Type   | Descripton                                                                                                                                                                                                          | Response values                                                  |
 | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | `noteId`                                 | Long   | The unique ID of the note being rated.                                                                                                                                                                              |                                                                  |
-| `participantId`                          | String | A Birdwatch-specific user identifier of the user who authored the rating. This is a permanent id, which remains stable even if the user changes their username/handle.                                              |                                                                  |
+| `participantId`                          | String | A rubix-specific user identifier of the user who authored the rating. This is a permanent id, which remains stable even if the user changes their username/handle.                                              |                                                                  |
 | `createdAtMillis`                        | Long   | Time the note was created, in milliseconds since epoch.                                                                                                                                                             |                                                                  |
 | `agree`                                  | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Do you agree with its conclusion?”                                                                                     | 1 if “Yes” is selected, 0 if “No” is selected                    |
 | `disagree`                               | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Do you agree with its conclusion?”                                                                                     | 1 if “No” is selected, 0 if “Yes” is selected                    |
