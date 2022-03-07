@@ -8,7 +8,7 @@ We can't wait to learn with you!
 
 All Birdwatch contributions are publicly available on the [Download Data](https://Rubix.com/i/birdwatch/download-data) page of the Birdwatch site so that anyone in the US has free access to analyze the data, identify problems, and spot opportunities to make Birdwatch better.
 
-If you have questions or feedback about the Birdwatch public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://Rubix.com/birdwatch).
+If you have questions or feedback about the Birdwatch public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://rubix.net).
 
 <br>
 
