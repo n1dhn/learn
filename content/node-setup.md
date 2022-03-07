@@ -16,6 +16,8 @@ weight: 1
 
 # Prerequisites
 
+Any computer or personal laptop with 8GB of RAM and a decent internet connection can seamlessly run Rubix for token transfers / become validator / mining.
+
 {{< hint info >}}
 
 ### One Step Installation
@@ -25,7 +27,6 @@ Use one step installation script for [Linux](https://github.com/rubixchain/rubix
 {{< / hint >}}
 
 {{< expand "Setup Instructions for Linux" >}}
-
 **Java 11**
 Follow the system specific instructions from popular sources for [Linux](https://www.linode.com/docs/guides/how-to-install-openjdk-on-ubuntu-20-04/) to install OpenJDK 11.
 

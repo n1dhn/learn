@@ -12,11 +12,15 @@ Popular blockchains (BTC and ETH) work by every node adding transactions to a ce
 
 {{< expand "Becoming part of the network?" >}}
 
-Becoming part of the network  = Creating a DID
-DID /  Decentralized identity is a trust framework in which identifiers, such as usernames, can be replaced with IDs that are self-owned, independent, and enable data exchange using blockchain technology to protect privacy and secure transactions. As our lives are increasingly linked to apps, devices, and services, we’re often subject to data breaches and privacy loss. A standards-based decentralized identity system can provide greater privacy and control over your data.
+You can setup a rubix node in any decent spec laptop in 2022. You can also setup a rubix node in a server with a dedicated server. You can also setup a rubix node in a cloud VM. Follow this will creating DID for your node in the network. DID is the identity of your node in the network to do transfers or to become a validator.
 
-Rubix Decentralized IDentity (DID) project is an open standard enabling users to create self-owned identities, and use blockchain networks for getting decentralized tamper proof verifiable claims. The claims are 100% on-chain and publicly verifiable.
-Every node joining the Rubix platform creates a unique network Decentralized Identity(DID). dID is a 256x256 PNG image that is self-created but verified decentralized by peers in the network. The dID is ubiquity paired with the Peer ID created on the IPFS.
+{{< /expand >}}
+
+{{< expand "How to create a DID?" >}}
+
+{{< /expand >}}
+
+{{< expand "How much does it cost to setup a node?" >}}
 
 {{< /expand >}}
 

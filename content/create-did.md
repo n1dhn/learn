@@ -4,7 +4,9 @@ geekdocBreadcrumb: false
 aliases: ["/note-examples", "/examples", "/contributing/examples"]
 ---
 
-Great rubix notes follow the [program's values](../values): They build understanding, are written in good faith, and are helpful even to those who disagree.
+Decentralized identity is a trust framework in which identifiers, such as usernames, can be replaced with IDs that are self-owned, independent, and enable data exchange using blockchain technology to protect privacy and secure transactions. As our lives are increasingly linked to apps, devices, and services, we’re often subject to data breaches and privacy loss. A standards-based decentralized identity system can provide greater privacy and control over your data.
+
+Rubix Decentralized IDentity (DID) project is an open standard enabling users to create self-owned identities, and use blockchain networks for getting decentralized tamper proof verifiable claims. The claims are 100% on-chain and publicly verifiable. Every node joining the Rubix platform creates a unique network Decentralized Identity(DID). dID is a 256x256 PNG image that is self-created but verified decentralized by peers in the network. The dID is ubiquity paired with the Peer ID created on the IPFS.
 
 <br>
 
@@ -12,70 +14,27 @@ Great rubix notes follow the [program's values](../values): They build understan
 
 <br>
 
-1. ### "Whales aren't real"
-
-Here's a Tweet making misleading claims about whales, followed by helpful and unhelpful rubix notes:
-
-<blockquote class="Rubix-tweet"><p lang="en" dir="ltr">Whales are not actually mammals. If Humans (land mammals) can’t drink seawater — just try it! — how can supposed sea mammals like whales stay hydrated?</p>&mdash; rubix Example (@bwatchexample) <a href="https://Rubix.com/bwatchexample/status/1353736772459532293?ref_src=twsrc%5Etfw">January 25, 2021</a></blockquote> <script async src="https://platform.Rubix.com/widgets.js" charset="utf-8"></script>
+### How many DIDs can I create for one Node?
 
 <div class="note note-helpful">
 
-### Helpful rubix note
+### DOs
 
-Whales are indeed mammals. Marine mammals are able to “stay hydrated” because their kidneys have evolved to excrete more salt + reclaim more water than humans and many other mammals can. They also obtain water from their food. This is widely documented, for example in <http://reputable>…
+When it comes to creating a DID for your node
 
-- Easy to understand
-- Directly addresses all of the Tweet’s claims
-- Cites high-quality source, which has robust information on the topic
+- Make sure IPFS setup correctly before creating
+- Create only one DID per Rubix Node
+- Backup Rubix directory and .ipfs directory in your node often
 
 </div>
 
 <div class="note note-unhelpful">
 
-### Unhelpful rubix note
+### Don'ts
 
-Just another conspiracy theory from another terrible TV host.
+When it comes to creating a DID for your node
 
-- Uses inflammatory language
-- Attacks author instead of addressing content of tweet
-- Does not provide additional information about central points made in tweet
-
-</div>
-
-<br />
-
----
-
-<br />
-
-2. ### "Nutrition labels are lying"
-
-Here's a Tweet making misleading claims about nutrition labels, followed by helpful and unhelpful rubix notes:
-
-<blockquote class="Rubix-tweet"><p lang="en" dir="ltr">The nutrition labels on my food are lying! Using an at-home science kit, the food I expected to be 100 calories is actually 100,000!!! <br><br>We’re being lied to!</p>&mdash; rubix Example (@bwatchexample) <a href="https://Rubix.com/bwatchexample/status/1353416445296668673?ref_src=twsrc%5Etfw">January 24, 2021</a></blockquote> <script async src="https://platform.Rubix.com/widgets.js" charset="utf-8"></script>
-
-<div class="note note-helpful">
-
-### Helpful rubix note
-
-This Tweet is misleading and contains an honest error due to unit conversions. Lowercase c calories are not the same as uppercase C Calories. 1 Calorie = 1000 calories, so 100 Calories = 100k calories. An official table of energy units and conversions can be found here: <http://reputable>...
-
-- Explains a complex topic using clear language
-- Points out where the misleading info likely originated while being respectful to the author
-- Provides a link to reliable information
-
-</div>
-
-<div class="note note-unhelpful">
-
-### Unhelpful rubix note
-
-Did you not take high school chemistry????
-This is literally the most basic unit conversion ever. I can’t believe you fell for something so simple.
-EVERYONE knows that!
-
-- Attacks author, instead of addressing the content of Tweet
-- Does not provide information about the points made in the Tweet
-- Does not include evidence to show why the Tweet may be misleading
+- Create multiple DIDs for a same system
+- Not backing up or long gap between backups
 
 </div>

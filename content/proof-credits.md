@@ -4,9 +4,9 @@ geekdocBreadcrumb: false
 aliases: ["/data", "/about/data", "/contributing/data"]
 ---
 
-We can't wait to learn with you!
+Here's a Tweet making misleading claims about whales, followed by helpful and unhelpful rubix notes:
 
-All rubix contributions are publicly available on the [Download Data](https://Rubix.com/i/rubix/download-data) page of the rubix site so that anyone in the US has free access to analyze the data, identify problems, and spot opportunities to make rubix better.
+<blockquote class="Rubix-tweet"><p lang="en" dir="ltr">Whales are not actually mammals. If Humans (land mammals) can’t drink seawater — just try it! — how can supposed sea mammals like whales stay hydrated?</p>&mdash; rubix Example (@bwatchexample) <a href="https://Rubix.com/bwatchexample/status/1353736772459532293?ref_src=twsrc%5Etfw">January 25, 2021</a></blockquote> <script async src="https://platform.Rubix.com/widgets.js" charset="utf-8"></script>
 
 If you have questions or feedback about the rubix public data or would like to share your analyses of this data with us, please DM us at [@rubixchain](http://twitter.com/rubixChain).
 
