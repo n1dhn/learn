@@ -20,33 +20,54 @@ weight: 1
 
 ### One Step Installation
 
-Use one step installation script for [Linux](https://github.com/rubixchain/rubixnetwork) / [Mac](https://github.com/rubixchain/rubixnetwork) / [Windows](https://github.com/rubixchain/rubixnetwork). This script will install all the required dependencies and will run the setup script.
+Use one step installation script for [Linux](https://github.com/rubixchain/rubixnetwork) machines. This script will install all the required dependencies and will run the setup script.
 
 {{< / hint >}}
 
-To become a Birdwatch contributor, accounts must have:
+{{< expand "Setup Instructions for Linux" >}}
 
-- ### **Java 11**
+**Java 11**
+Follow the system specific instructions from popular sources for [Linux](https://www.linode.com/docs/guides/how-to-install-openjdk-on-ubuntu-20-04/) to install OpenJDK 11.
 
-This makes it more likely that contributors are real people instead of bots or adversary actors. Learn how to [verify your phone number](https://help.Rubix.com/managing-your-account/how-to-add-a-phone-number-to-your-account).
+**go-ipfs 0.6.0**
+Download for [Linux](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_linux-amd64.tar.gz)
 
-- ### **go-ipfs 0.6.0**
+**Run IPFS Setup Script**
+Configure your network swarm (unique key for the network nodes) and bootstrap (facilitate node visibility) using the script for [Linux](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_linux-amd64.tar.gz)
 
-Intended to reduce the use of artificially created or virtual phone numbers
+{{< /expand >}}
 
-- ### **Run IPFS Setup Script**
+{{< expand "Setup Instructions for Mac" >}}
 
-Intended to reduce the likelihood of abusive contributions.
+**Java 11**
+Follow the system specific instructions from popular sources for [Mac](https://techoral.com/blog/java/install-openjdk-11-on-mac.html)  to install OpenJDK 11.
 
-We want anyone to be able to contribute to Birdwatch, and may remove or modify some of these criteria as Birdwatch evolves and as we observe contributor's ability to promote high quality context that people find helpful.
+**go-ipfs 0.6.0**
+Download for [Mac](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_darwin-amd64.tar.gz)
+
+**Run IPFS Setup Script**
+Configure your network swarm (unique key for the network nodes) and bootstrap (facilitate node visibility) using the script for [Mac](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_darwin-amd64.tar.gz)
+
+{{< /expand >}}
+
+{{< expand "Setup Instructions for Windows" >}}
+
+**Java 11**
+Follow the system specific instructions from popular sources for [Windows](https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk) to install OpenJDK 11.
+
+**go-ipfs 0.6.0**
+Download for [Windows](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_windows-amd64.zip)
+
+**Run IPFS Setup Script**
+Configure your network swarm (unique key for the network nodes) and bootstrap (facilitate node visibility) using the script fo [Windows](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_windows-amd64.zip)
+
+{{< /expand >}}
 
 # Latest Releases
 
-To promote transparency, all contributions to Birdwatch are [anonymized](../aliases/) and publicly visible on the Birdwatch site, **even if an account’s Tweets are protected**.
+Subscribe to GitHub repo [wallet repository](https://github.com/rubixchain/wallet) or [home repository](https://github.com/rubixchain/rubixnetwork) to be notified on new releases.
 
-During the first phase of the pilot, Birdwatch is limited to a small test group in the US.
-
-Our goal is to expand Birdwatch to the global Rubix community. We want anyone to be able to participate and know that having contributors with different points of view is essential to Birdwatch helpfully addressing misinformation. We’ll draw on learnings from this initial test and, over time, scale safely.
+For help regarding getting notified for releases see [documentation](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/viewing-your-subscriptions)
 
 ## {{< button href="https://github.com/rubixchain/wallet/releases" >}}GUI Wallet from GitHub{{< /button >}}
 
@@ -59,71 +80,24 @@ Our goal is to expand Birdwatch to the global Rubix community. We want anyone to
 
 # Troubleshooting
 
-Contributions are also subject to Rubix [Rules](https://help.Rubix.com/rules-and-policies/Rubix-rules), [Terms of Service](https://Rubix.com/tos) and [Privacy Policy](https://Rubix.com/privacy). Failure to abide by the rules can result in removal from the Birdwatch pilot, and/or other remediations.
+Common error messages faced by nodes and the known solutions are listed below.
+
 <br>
 
 {{< tabs "uniqueid" >}}
-{{< tab "Notes table" >}}
+{{< tab "API Endpoints" >}}
 | Field | Type | Descripton | Response values |
 | ---------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `noteId` | Long | The unique ID of this note | |
-| `participantId` | String | A Birdwatch-specific user identifier of the user who authored the note. This is a permanent id, which remains stable even if the user changes their username/handle. | |
-| `createdAtMillis` | Long | Time the note was created, in milliseconds since epoch. | |
-| `tweetId` | Long | The tweetId number for the tweet that the note is about. | |
-| `classification` | String | User-entered multiple choice response to note writing question: “Given current evidence, I believe this tweet is:” | "NOT_MISLEADING" "MISINFORMED_OR_POTENTIALLY_MISLEADING" |
-| `believable` | String | User-entered multiple choice response to note writing question: “If this tweet were widely spread, its message would likely be believed by:” | "BELIEVABLE_BY_FEW", "BELIEVABLE_BY_MANY" |
-| `harmful` | String | User-entered multiple choice response to note writing question: “If many believed this tweet, it might cause:” | "LITTLE_HARM", "CONSIDERABLE_HARM" |
-| `validationDifficulty` | String | User-entered multiple choice response to note writing question: “Finding and understanding the correct information would be:” | "EASY", "CHALLENGING" |
-| `misleadingOther` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type). | 1 if “Other” is selected, else 0. |
-| `misleadingFactualError` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type) | 1 if “It contains a factual error” selected, else 0. |
-| `misleadingManipulatedMedia` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type) | 1 if “It contains a digitally altered photo or video” selected, else 0. |
-| `misleadingOutdatedInformation` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type) | 1 if “It contains outdated information that may be misleading” is selected, else 0. |
-| `misleadingMissingImportantContext` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type). | 1 if “It is a misrepresentation or missing important context” is selected, else 0. |
-| `misleadingUnverifiedClaimAsFact` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type). | 1 if “It presents an unverified claim as a fact” is selected, else 0. |
-| `misleadingSatire` | Int | User-entered checkbox in response to question “Why do you believe this tweet may be misleading?” (Check all that apply question type). | 1 if “It is a joke or satire that might be misinterpreted as a fact” is selected, else 0. |
-| `notMisleadingOther` | Int | User-entered checkbox in response to question “Why do you believe this tweet is not misleading?” (Check all that apply question type). | 1 if “Other” is selected, else 0. |
-| `notMisleadingFactuallyCorrect` | Int | User-entered checkbox in response to question “Why do you believe this tweet is not misleading?” (Check all that apply question type). | 1 if “It expresses a factually correct claim” is selected, else 0. |
-| `notMisleadingOutdatedButNotWhenWritten` | Int | User-entered checkbox in response to question “Why do you believe this tweet is not misleading?” (Check all that apply question type). | 1 if “This Tweet was correct when written, but is out of date now” is selected, else 0. |
-| `notMisleadingClearlySatire` | Int | User-entered checkbox in response to question “Why do you believe this tweet is not misleading?” (Check all that apply question type). | 1 if “ It is clearly satirical/joking” is selected, else 0. |
-| `notMisleadingPersonalOpinion` | Int | User-entered checkbox in response to question “Why do you believe this tweet is not misleading?” (Check all that apply question type). | 1 if “It expresses a personal opinion” is selected, else 0. |
-| `trustworthySources` | Int | Binary indicator, based on user-entered multiple choice in response to note writing question “Did you link to sources you believe most people would consider trustworthy?” | 1 if “Yes” is selected, 0 if “No” is selected |
-| `summary` | String | User-entered text, in response to the note writing prompt “Please explain the evidence behind your choices, to help others who see this tweet understand why it is not misleading” | User entered text explanation, with some characters escaped (e.g. tabs converted to spaces). |
+| `Sample` | Long | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | Lorem Ipsum is simply dummy text of the printing and typesetting industry. |
+| `Sample` | String | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | Lorem Ipsum is simply dummy text of the printing and typesetting industry. |
 
 {{< /tab >}}
-{{< tab "Ratings Table" >}}
+{{< tab "Resolving Error Messages" >}}
 
 | Field                                    | Type   | Descripton                                                                                                                                                                                                          | Response values                                                  |
 | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `noteId`                                 | Long   | The unique ID of the note being rated.                                                                                                                                                                              |                                                                  |
-| `participantId`                          | String | A Birdwatch-specific user identifier of the user who authored the rating. This is a permanent id, which remains stable even if the user changes their username/handle.                                              |                                                                  |
-| `createdAtMillis`                        | Long   | Time the note was created, in milliseconds since epoch.                                                                                                                                                             |                                                                  |
-| `agree`                                  | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Do you agree with its conclusion?”                                                                                     | 1 if “Yes” is selected, 0 if “No” is selected                    |
-| `disagree`                               | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Do you agree with its conclusion?”                                                                                     | 1 if “No” is selected, 0 if “Yes” is selected                    |
-| ~~`helpful`~~                            | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Is this note helpful? ” - _Deprecated as of 2021-06-30_.                                                               | 1 if “Yes” is selected, 0 if “No” is selected                    |
-| ~~`notHelpful`~~                         | Int    | Binary indicator, based on user-entered multiple choice in response to note rating question “Is this note helpful?” _Deprecated as of 2021-06-30_.                                                                  | 1 if “No” is selected, 0 if “Yes” is selected                    |
-| `helpfulnessLevel`                       | String | User-entered multiple choice response to note rating question: “Is this note helpful” _Added as of 2021-06-30_.                                                                                                     | "NOT_HELPFUL" "SOMEWHAT_HELPFUL" "HELPFUL"                       |
-| `helpfulOther`                           | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type).                                                                                      | 1 if “Other” is selected, else 0.                                |
-| ~~`helpfulInformative`~~                 | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                       | 1 if “Informative” is selected, else 0.                          |
-| `helpfulClear`                           | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type).                                                                                      | 1 if “Clear and/or well-written” is selected, else 0.            |
-| ~~`helpfulEmpathetic`~~                  | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                       | 1 if “Nonjudgmental and/or empathetic” is selected, else 0.      |
-| `helpfulGoodSources`                     | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type).                                                                                      | 1 if “Cites high-quality sources” is selected, else 0.           |
-| ~~`helpfulUniqueContext`~~               | Int    | User-entered checkbox in response to question “What about this note was helpful to you?” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                       | 1 if “Offers unique information or context” is selected, else 0. |
-| `helpfulAddressesClaim`                  | Int    | User-entered checkbox in response to question “What was helpful about it?” (Check all that apply question type). _New as of 2021-06-30_                                                                             | 1 if “Directly addresses the Tweet's claim” is selected, else 0. |
-| `helpfulImportantContext`                | Int    | User-entered checkbox in response to question “What was helpful about it?” (Check all that apply question type). _New as of 2021-06-30_                                                                             | 1 if “Provides important context” is selected, else 0.           |
-| `helpfulUnbiasedLanguage`                | Int    | User-entered checkbox in response to question “What was helpful about it?” (Check all that apply question type). _New as of 2021-12-15_                                                                             | 1 if “Neutral or unbiased language” is selected, else 0.         |
-| `notHelpfulOther`                        | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Other” is selected, else 0.                                |
-| `notHelpfulIncorrect`                    | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Incorrect information” is selected, else 0.                |
-| `notHelpfulSourcesMissingOrUnreliable`   | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Sources missing or unreliable” is selected, else 0.        |
-| ~~`NotHelpfulOpinionSpeculationOrBias`~~ | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                   | 1 if “Opinion, speculation, or bias” is selected, else 0.        |
-| `notHelpfulMissingKeyPoints`             | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Misses key points or irrelevant” is selected, else 0.      |
-| ~~`notHelpfulOutdated`~~                 | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                   | 1 if “Outdated information” is selected, else 0.                 |
-| `notHelpfulHardToUnderstand`             | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Hard to understand” is selected, else 0.                   |
-| `notHelpfulArgumentativeOrBiased`        | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type). _Variable name changed from notHelpfulArgumentativeOrInflammatory in 2021-12-15_ | 1 if “Argumentative or biased language is selected, else 0.      |
-| ~~`notHelpfulOffTopic`~~                 | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type). _Deprecated as of 2021-06-30_.                                                   | 1 if “Off topic” is selected, else 0.                            |
-| `notHelpfulSpamHarassmentOrAbuse`        | Int    | User-entered checkbox in response to prompt “Help us understand why this note was unhelpful” (Check all that apply question type).                                                                                  | 1 if “Spam, harassment, or abuse” is selected, else 0.           |
-| `notHelpfulIrrelevantSources`            | Int    | User-entered checkbox in response to prompt “What was unhelpful about it?” (Check all that apply question type). New as of 2021-06-30                                                                               | 1 if “Sources do not support note” is selected, else 0.          |
-| `notHelpfulOpinionSpeculation`           | Int    | User-entered checkbox in response to prompt “What was unhelpful about it?” (Check all that apply question type). New as of 2021-12-15                                                                               | 1 if “Opinion or speculation” is selected, else 0.               |
-| `notHelpfulNoteNotNeeded`                | Int    | User-entered checkbox in response to prompt “What was unhelpful about it?” (Check all that apply question type). New as of 2021-12-15                                                                               | 1 if “Note not needed on this Tweet” is selected, else 0.        |
+| ~~`Sample`~~                  | Int    | Lorem Ipsum is simply dummy text of the printing and typesetting industry.. _Deprecated as of 2021-06-30_.                                                       | Lorem Ipsum is simply dummy text of the printing and typesetting industry.      |
+| `Sample`                     | Int    | Lorem Ipsum is simply dummy text of the printing and typesetting industry..                                                                                      |Lorem Ipsum is simply dummy text of the printing and typesetting industry..           |
 
 {{< /tab >}}
 {{< /tabs >}}
